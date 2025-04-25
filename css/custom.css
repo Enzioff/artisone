@@ -1,0 +1,99 @@
+.price {
+    white-space: nowrap;
+}
+
+.button__text {
+    white-space: nowrap;
+}
+
+.modal__description--center {
+    text-align: center;
+}
+
+.icon {
+    height: 55px;
+}
+.bx-notifier-panel { position: fixed; height: 35px; z-index: 1001; white-space:nowrap; top: -200px; left: -200px; box-shadow: 0 0 1px rgba(255, 255, 255, 0.9); max-width: 307px; background: none repeat scroll 0 0 #104236;padding-right: 9px; border-radius: 10px 10px 0 0}
+
+.catalog-toolbar {
+    display: block;
+    margin-top: 15px;
+}
+.catalog-toolbar__select {
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+.catalog-toolbar__select-trigger {
+    color: #556269;
+    font-size: 1rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    padding: 0 1rem 0 10px;
+}
+.catalog-toolbar__select-trigger::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("assets/icon-select.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 8px;
+
+}
+.catalog-toolbar__select-menu {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    padding: 1rem 0;
+    z-index: 10;
+}
+.catalog-toolbar__select-menu.active {
+    display: block;
+    visibility: visible;
+}
+.catalog-toolbar__select-item {
+    display: block;
+    padding: 10px;
+}
+.catalog-toolbar__select-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.catalog-toolbar__select-item a{
+    color: #556269;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.catalog-toolbar__categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.catalog-toolbar__categories-link {
+    display: flex;
+    align-items: center;
+    padding: 6px 15px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #556269;
+    font-size: 1rem;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.catalog-toolbar__categories-link.active{
+    background-color: #FEB904;
+}
+.footer__logos{
+	flex-wrap:wrap;
+}
