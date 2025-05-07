@@ -1099,6 +1099,10 @@
     position: static;
 }
 
+.swiper-container {
+    width: 100%;
+}
+
 .reviews-form {
     display: flex;
     flex-direction: column;
