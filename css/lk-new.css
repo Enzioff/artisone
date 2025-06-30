@@ -1,0 +1,435 @@
+.block-card__note {
+    display: flex;
+    align-items: center;
+    padding-right: 71px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.block-card__top-line {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 45px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.block-card__center-line .switchable[current="true"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 47px 28px;
+}
+
+.block-card__center-line .switchable[current="true"].switchable--short {
+    max-width: 670px;
+}
+
+@media screen and (max-width: 1300px) {
+    .block-card__center-line .switchable[current="true"] {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.block-card__input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.block-card__button {
+    display: flex;
+    grid-column: span 2;
+    width: 200px;
+}
+
+.block-card__input select {
+    cursor: pointer;
+}
+
+.block-card__input span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #989898;
+}
+
+.block-card__top-line h3 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #104236;
+}
+
+.block-card__top-line p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #989898;
+}
+
+.block-profile-card--person-steps {
+    padding: 43px 31px;
+    height: fit-content;
+}
+
+.block-profile-card--steps {
+    padding: 40px 38px;
+    min-height: 424px;
+    height: fit-content;
+}
+
+.block-profile-card__title {
+    margin-bottom: 40px;
+    font-family: 'Rawline', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    color: #104236;
+}
+
+.block-profile-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.block-profile-card__list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-family: 'Rawline', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    color: #104236;
+}
+
+.block-profile-card__list li span[current="true"] {
+    color: #ffffff;
+    background-color: #104236;
+}
+
+.block-profile-card__list li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    background-color: #B8C7C3;
+    border-radius: 5px;
+}
+
+.block-profile--steps {
+    flex-direction: row;
+    gap: 26px;
+}
+
+.block-profile--steps .block-profile__picture img {
+    width: 136px;
+    height: 136px;
+}
+
+.block-profile--steps .block-profile__name,
+.block-profile--steps .block-profile__description {
+    text-align: left;
+}
+
+.block-profile__user-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1300px) {
+    .block-card__note {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+}
+
+.block-docs {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+}
+
+.block-docs__upload {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding: 26px 0 28px;
+}
+
+.block-docs__file {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    min-width: 334px;
+    background-color: #B8C7C3;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .block-docs__upload {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .block-docs__file {
+        min-width: auto;
+        width: 100%;
+        max-width: 334px;
+    }
+}
+
+.block-docs__file button {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.block-docs__file button svg {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+}
+
+.block-docs__file span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #104236;
+}
+
+.block-docs__file--picture {
+    flex-shrink: 0;
+    padding: 0;
+    min-width: auto;
+    width: 206px;
+    height: 157px;
+}
+
+.block-docs__file--picture picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.block-docs__file--picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.block-docs__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1;
+    min-width: 242px;
+    padding: 19px 41px;
+    background-color: #326458;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.block-docs__label span {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.block-docs__label svg {
+    display: flex;
+    width: 22px;
+    height: 22px;
+}
+
+.block-docs__title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 48px;
+    color: #104236;
+}
+
+.block-docs__text {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #989898;
+}
+
+.add-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.add-block span {
+    font-family: "Manrope", Sans-Serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #326458;
+}
+
+.add-block svg {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+.block-info {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.block-info__text {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #556269;
+}
+
+.block-info__text--small {
+    font-size: 14px;
+    line-height: 22px;
+    color: #989898;
+    text-decoration: none;
+}
+
+.block-info__more {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.block-info__title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #104236;
+}
+
+.block-info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    max-width: 222px;
+}
+
+.block-info__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.block-info__head {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #104236;
+}
+
+.block-activate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 8px 18px;
+    width: 100%;
+    min-height: 86px;
+    background-color: #FEB904;
+    border: 1px solid #104236;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*.block-activate::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 2px;*/
+/*    left: -3px;*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    border-radius: 10px;*/
+/*    border: 1px solid #104236;*/
+/*    background: transparent;*/
+/*    pointer-events: none;*/
+/*}*/
+
+.block-activate svg:first-child {
+    display: flex;
+    width: 65px;
+    height: 70px;
+}
+
+.block-activate svg:last-child {
+    display: flex;
+    width: 13px;
+    height: 13px;
+    margin-left: auto;
+}
+
+.block-activate__info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.block-activate__title {
+    font-family: "Rawline", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 110%;
+    color: #104236;
+}
+
+.block-activate__text {
+    font-family: "Rawline", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 110%;
+    color: #104236;
+}
