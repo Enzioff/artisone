@@ -11,6 +11,7 @@ class App {
     this.createTabsSlider()
     this.createTabs()
     this.createSlider()
+    this.createFileUploadPreview()
   }
   
   createTabsSlider = () => {
@@ -81,5 +82,29 @@ class App {
       headerItems.forEach(item => item.classList.remove('active'))
       contentItems.forEach(item => item.classList.remove('active'))
     }
+  }
+
+  createFileUploadPreview = () => {
+    const uploadBlock = document.querySelector('[data-file-preview]')
+    if (!uploadBlock) return;
+    const uploadInput = uploadBlock.querySelector('input');
+    const previewBlock = uploadBlock.querySelector('picture')
+    const previewImg = previewBlock.querySelector('img')
+    
+    uploadInput.addEventListener('change', (evt) => {
+      const file = evt.target.files[0];
+      if (!file) return;
+      
+      const reader = new FileReader();
+      
+      reader.onload = function(event) {
+        previewImg.src = event.target.result;
+        if (previewImg.src.length > 0) {
+          previewBlock.classList.add('upload');
+        }
+      };
+      
+      reader.readAsDataURL(file);
+    })
   }
 }
