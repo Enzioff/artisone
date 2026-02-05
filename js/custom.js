@@ -12,6 +12,7 @@ class App {
     this.createTabs()
     this.createSlider()
     this.createFileUploadPreview()
+    this.createFancybox()
   }
   
   createTabsSlider = () => {
@@ -105,6 +106,12 @@ class App {
       };
       
       reader.readAsDataURL(file);
+    })
+  }
+  
+  createFancybox = () => {
+    Fancybox.bind('[data-fancybox]', {
+      defaultType: 'inline',
     })
   }
 }

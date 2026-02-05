@@ -21,6 +21,10 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+    />
 </head>
 <!-- body--input -->
 <body class="body ">
@@ -286,22 +290,22 @@
                             <div class="swiper-container slider-article">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <picture class="article-preview">
+                                        <picture class="article-preview" data-fancybox="gallery" data-src="./img/preview-1.jpg">
                                             <img src="./img/preview-1.jpg" alt="">
                                         </picture>
                                     </div>
                                     <div class="swiper-slide">
-                                        <picture class="article-preview">
+                                        <picture class="article-preview" data-fancybox="gallery" data-src="./img/preview-2.jpg">
                                             <img src="./img/preview-2.jpg" alt="">
                                         </picture>
                                     </div>
                                     <div class="swiper-slide">
-                                        <picture class="article-preview">
+                                        <picture class="article-preview" data-fancybox="gallery" data-src="./img/preview-3.jpg">
                                             <img src="./img/preview-3.jpg" alt="">
                                         </picture>
                                     </div>
                                     <div class="swiper-slide">
-                                        <picture class="article-preview">
+                                        <picture class="article-preview" data-fancybox="gallery" data-src="./img/preview-4.jpg">
                                             <img src="./img/preview-4.jpg" alt="">
                                         </picture>
                                     </div>
@@ -1692,6 +1696,7 @@
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
